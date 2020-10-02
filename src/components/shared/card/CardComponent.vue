@@ -1,7 +1,7 @@
 <template>
     <b-card-group columns>
-        <div id="cards" class="card shadow animated fadeIn slow" v-for="heroe in heroes" :key="heroe.nombre">
-            <b-card :img-src="require(`../../../assets/img/${heroe.img}`)" :img-alt="heroe.nombre" :img-title="heroe.nombre" class="mb-2 card-img-top">
+        <div class="card shadow animated fadeIn slow" v-for="heroe in heroes" :key="heroe.nombre">
+            <b-card :img-src="require(`../../../assets/img/${heroe.img}`)" :img-alt="heroe.nombre" :img-title="heroe.nombre" class="card-img-top border-0">
                 <b-card-title><h5>{{heroe.nombre}}</h5></b-card-title>
                 <b-card-text>{{heroe.bio}}</b-card-text>
                 <b-card-text><small class="text-muted"><strong>Año:</strong> {{ heroe.aparicion }}</small></b-card-text>

@@ -5,6 +5,7 @@ import VueRouter from 'vue-router';
 // Componentes
 import HeroesComponent from '../components/heroes/HeroesComponent.vue';
 import HeroeComponent from '../components/heroe/HeroeComponent.vue';
+import BuscadorComponent from '../components/buscador/BuscadorComponent.vue';
 
 // ---------------------------------------------------------------//
 // Configuracion del enrutamiento                                 //
@@ -15,6 +16,7 @@ const routes = [
     {path: '/', component: HeroesComponent},
     {path: '/heroes', component: HeroesComponent},
     {path: '/heroe/:nombre', component: HeroeComponent},
+    {path: '/buscar/:palabra', component: BuscadorComponent},
     {path: '*', component: HeroesComponent }
 ];
 

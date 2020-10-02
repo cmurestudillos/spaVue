@@ -58,7 +58,7 @@ export default {
                 }
             }
         },
-        // Metodo para obtener datos del articulo seleccionado
+        // Metodo para volver a la pagina anterior
         volver(){
             // Log de seguimiento
             console.log('HeroeComponent.vue - Metodo getHeroe');

@@ -1,24 +1,15 @@
-# spavue
+# SPA (Single Page Application)
 
-## Project setup
-```
-npm install
-```
+Ejemplo de SPA (Single Page Application) realizado en Vue.js y Bootstrap-Vue.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Instalar Dependencias
+- Instalar `npm install`
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Iniciar proyecto
+Ejecutar en terminal el comando `npm run serve` e introducir en el navegador `http://localhost:8080/`.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Compilar para producion
+`npm install`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Ayuda
+Para mas informacion,  [Ir a](https://cli.vuejs.org/config/).

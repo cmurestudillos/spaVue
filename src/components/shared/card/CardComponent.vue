@@ -1,46 +1,30 @@
 <template>
     <b-card-group columns>
-        <b-card img-src="https://placekitten.com/g/400/450" title="Card title that wraps to a new line" img-alt="Image" img-top>
-        <b-card-text>
-            This is a wider card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.
-        </b-card-text>
-        </b-card>
+        <div id="cards" class="card shadow animated fadeIn slow" v-for="heroe in heroes" :key="heroe.nombre">
+            <b-card :img-src="require(`../../../assets/img/${heroe.img}`)" :img-alt="heroe.nombre" :img-title="heroe.nombre" class="mb-2 card-img-top">
+                <b-card-title><h5>{{heroe.nombre}}</h5></b-card-title>
+                <b-card-text>{{heroe.bio}}</b-card-text>
+                <b-card-text><small class="text-muted"><strong>Año:</strong> {{ heroe.aparicion }}</small></b-card-text>
+                <router-link :to="'/heroe/' + heroe.nombre" class="btn btn-4 btn-block" >Ver mas...</router-link>
+            </b-card>
+        </div>
     </b-card-group>   
 </template>
 
 <script>
-
+// Componentes Bootstrap-vue
+import { BCard } from 'bootstrap-vue';
+// Datos a cargar
+import customData from '../../../data/heroes.json';
 export default {
     name: 'CardComponent',
     components: {
       BCard
     },
-    mounted(){
-        // Recogemos el parametro id del articulo seleccionado
-        this.heroeId = this.$route.params.id; 
-        // Llamamos al metodo
-        this.getHeroe(this.heroeId);
-    },      
     data(){
         return {
-            heroe: []
+            heroes: customData
         }
-    },
-    methods: {
-        // Metodo para obtener datos del articulo seleccionado
-        getHeroe(heroeId){
-            // Log de seguimiento
-            console.log('CardComponent.vue - Metodo getHeroe');
-
-            axios.get('data/heroes.json' + heroeId + '.json')
-            .then( res => {
-                if(res.data.heroe){
-                    this.heroe = res.data.heroe;
-                    console.log('this.heroe');
-                }
-            });
-        }
-    }        
+    }      
 }
 </script>

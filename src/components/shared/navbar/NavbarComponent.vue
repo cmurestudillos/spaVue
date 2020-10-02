@@ -2,7 +2,7 @@
     <div>
     <b-navbar toggleable="lg" type="light" variant="light" class="navbar navbar-expand-lg navbar-dark bg-custom">
             <b-navbar-brand href="#">
-                <img src="assets/logo.png" class="d-inline-block align-top" width="30" height="30" title="Superheroes">
+                <img src="../../../assets/img/A-64.png" width="30" height="30" title="Superheroes">
             </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -26,6 +26,7 @@
 
 <script>
 import { BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle  } from 'bootstrap-vue';
+
 export default {
     name: 'NavbarComponent',
     components: {
@@ -33,6 +34,6 @@ export default {
       BNavbarNav,
       BNavbarBrand,
       BNavbarToggle
-    }    
+    }      
 }
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <NavbarComponent></NavbarComponent>
+        <router-view class="container main-container"></router-view>
      <FooterComponent></FooterComponent>
   </div>
 
@@ -8,12 +9,14 @@
 
 <script>
 // Componentes comunes
+import NavbarComponent from './components/shared/navbar/NavbarComponent.vue';
 import FooterComponent from './components/shared/footer/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   }
 }
 </script>

@@ -3,7 +3,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 // Componentes
-import HelloWorld from '../components/HelloWorld.vue';
+import HeroesComponent from '../components/heroes/HeroesComponent.vue';
 
 // ---------------------------------------------------------------//
 // Configuracion del enrutamiento                                 //
@@ -11,8 +11,8 @@ import HelloWorld from '../components/HelloWorld.vue';
 Vue.use(VueRouter);
 
 const routes = [
-    {path: '/', component: HelloWorld},
-    {path: '/home', component: HelloWorld}
+    {path: '/', component: HeroesComponent},
+    {path: '/heroes', component: HeroesComponent}
 ];
 
 const router = new VueRouter({

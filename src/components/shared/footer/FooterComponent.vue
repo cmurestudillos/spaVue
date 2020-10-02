@@ -1,9 +1,7 @@
 <template>
-    <footer id="footer">
-        <div class="center">
-            <p>Copyright &copy; - Carlos Mur</p>
-        </div>
-    </footer>
+    <div class="footer bg-custom">
+        <p><i>Copyright &copy; - Carlos Mur</i></p>
+    </div>            
 </template>
 
 <script>

@@ -4,4 +4,7 @@ node_modules
 # Produccion
 dist
 
+# Entorno
+.env
+
 

@@ -25,11 +25,6 @@ export default {
       BNavbar,
       BNavbarNav,
       BNavbarToggle
-    },
-    data(){
-        return {
-            buscarTexto: null
-        }
-    }          
+    }        
 }
 </script>

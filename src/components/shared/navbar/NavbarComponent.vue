@@ -30,15 +30,6 @@ export default {
         return {
             buscarTexto: null
         }
-    },      
-    methods: {
-        // Metodo para buscar items en la pagina
-        buscarHeroe(){
-            // Log de seguimiento
-            console.log('NavbarComponent.vue - Metodo buscarHeroe');
-
-            this.$router.push('/buscar/' + this.buscarTexto);
-        }        
-    }           
+    }          
 }
 </script>

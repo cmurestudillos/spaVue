@@ -12,4 +12,4 @@ Ejecutar en terminal el comando `npm run serve` e introducir en el navegador `ht
 `npm run build`
 
 ## Ayuda
-Para mas informacion,  [Ir a](https://cli.vuejs.org/config/).
+Para mas informacion, [Vue-cli](https://cli.vuejs.org/config/).

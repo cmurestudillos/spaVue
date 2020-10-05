@@ -1,7 +1,7 @@
 <template>
     <div>
     <b-navbar toggleable="lg" type="light" variant="light" class="navbar navbar-expand-lg navbar-dark bg-custom">
-            <router-link :to="'/heroes'" class="active">
+            <router-link :to="'/heroes'">
                 <img src="../../../assets/img/A-64.png" width="30" height="30" title="Superheroes">
             </router-link>
 
@@ -9,15 +9,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-            <b-nav-item href="/heroes">Heroes</b-nav-item>
-        </b-navbar-nav>
-
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-            <b-nav-form @submit.prevent="buscarHeroe">
-            <b-form-input nombre="buscar" v-model="buscarTexto" size="sm" class="mr-sm-2" placeholder="Buscar Heroe ..." ></b-form-input>
-            <b-button size="sm" variant="outline-success" class="my-2 my-sm-0" type="submit">Buscar</b-button>
-            </b-nav-form>
+            <b-nav-item href="/heroes" class="active">Heroes</b-nav-item>
         </b-navbar-nav>
         </b-collapse>
     </b-navbar>

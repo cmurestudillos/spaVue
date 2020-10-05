@@ -20,8 +20,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  /* Estilos */
-  @import './assets/css/styles.css';
-</style>

@@ -4,7 +4,6 @@
         <router-view class="container main-container"></router-view>
      <FooterComponent></FooterComponent>
   </div>
-
 </template>
 
 <script>
